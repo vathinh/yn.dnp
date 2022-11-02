@@ -11,7 +11,7 @@
         mm = String(today.getMonth() + 1).padStart(2, "0"),
         yyyy = today.getFullYear(),
         nextYear = yyyy + 1,
-        dayMonth = "11/02/",
+        dayMonth = "11/01/",
         birthday = dayMonth + yyyy;
     
     today = mm + "/" + dd + "/" + yyyy;
@@ -32,7 +32,7 @@
             document.getElementById("seconds").innerText = Math.floor((distance % (minute)) / second);
   
           //do something later when date is reached
-          if (distance < 0) {
+          if (distance > 0) {
             document.getElementById("headline").innerText = "It's Yen Nhi birthday!";
             document.getElementById("countdown").style.display = "none";
             document.getElementById("content").style.display = "block";
